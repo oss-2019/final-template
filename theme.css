@@ -11,3 +11,9 @@
   border: 5px solid #fff;
   box-shadow: 1px 1px 2px #e6e6e6;
 }
+
+.nimg>img:hover{
+  height: 70px;
+  width: 70px;
+  transition: all 0.3s;
+}
