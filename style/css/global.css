@@ -826,100 +826,47 @@ header {
   left: 0;
   opacity: 1;
 }
-
-.experience__wrapper {
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(67, 55, 76, 0.99);
+  background-image: -webkit-linear-gradient(top left, #360033, #0b8793 2100px);
+  background-image: linear-gradient(to bottom right, #360033, #0b8793 2100px);
   position: relative;
-  z-index: 200;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 20%;
+  color:white;
+  padding: 100px;
+}
+
+/* Main column */
+.main {
+  flex: 20%;
+  color:white;
+  padding: 20px;
+  float:right;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-top: 110px;
-  padding-bottom: 200px;
+  padding: 20px;
+}
+@media screen and (max-width: 700px) {
+  .row{   
+    flex-direction: column;
+  }
 }
 
-.experience__icons-wrapper {
-  margin-bottom: 20px;
-}
 
-.experience__icons-wrapper::after {
-  display: table;
-  content: " ";
-  clear: both;
-}
 
-.experience__icon {
-  position: relative;
-  margin-top: 100px;
-  float: left;
-  width: 20%;
-  height: 120px;
-  background-image: url("../img/exp_html5.svg");
-  background-size: 100px 100px;
-  background-position: 50%;
-}
 
-.experience__icon--html5 {
-  background-image: url("../img/exp/exp_html5.svg");
-}
-
-.experience__icon--css3 {
-  background-image: url("../img/exp/exp_css3.svg");
-}
-
-.experience__icon--javascript {
-  background-image: url("../img/exp/exp_javascript.svg");
-}
-
-.experience__icon--sass {
-  background-image: url("../img/exp/exp_sass.svg");
-}
-
-.experience__icon--jquery {
-  background-image: url("../img/exp/exp_jquery.svg");
-}
-
-.experience__icon--wordpress {
-  background-image: url("../img/exp/exp_wordpress.svg");
-}
-
-.experience__icon--git {
-  background-image: url("../img/exp/exp_git.svg");
-}
-
-.experience__icon--photoshop {
-  background-image: url("../img/exp/exp_photoshop.svg");
-}
-
-.experience__icon--illustrator {
-  background-image: url("../img/exp/exp_illustrator.svg");
-}
-
-.experience__icon--fireworks {
-  background-image: url("../img/exp/exp_fireworks.svg");
-}
-
-.experience__icon--bootstrap {
-  background-image: url("../img/exp/exp_bootstrap.svg");
-}
-
-.experience__icon--foundation {
-  background-image: url("../img/exp/exp_foundation-glasses.svg");
-}
-
-.experience__icon-description {
-  display: block;
-  position: absolute;
-  font-size: 19px;
-  font-weight: 400;
-  left: 50%;
-  bottom: -25px;
-  -webkit-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
-  color: rgba(255, 255, 255, 0.9);
-  width: 200px;
-  text-align: center;
-}
 
 /*------------------------------------*    .features
 \*------------------------------------*/
